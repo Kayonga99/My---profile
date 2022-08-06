@@ -135,9 +135,7 @@ body {
 
 .overlay-3 {
 	padding: 60px 0;
-	/* background-color: rgba(9, 20, 39, 0.83); */
-	/* background-color: rgba(24, 77, 77, 0.93); */
-	background-color: rgba(33, 103, 88, 0.9);
+	background-color: rgba(9, 20, 39, 0.83);
 }
 
 .overlay {
@@ -480,7 +478,7 @@ ul.numbersList span{
     line-height: 36px;
     margin-top: 25px;
 }
-.
+
 .contact-info i {
     width: 40px;
 	height: 40px;
