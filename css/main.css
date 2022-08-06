@@ -269,9 +269,6 @@ body {
 }
 
 .btn-view {
-	/* border: 1px solid #35405f;
-	color: #35405f;
-	border-radius: 0; */
 	text-transform: uppercase;
 	color: lightseagreen;
 	border: 1px solid rgba(32, 178, 170, 0.86);
@@ -279,7 +276,7 @@ body {
 	font-weight: 300;
 	word-spacing: 5px;
 	letter-spacing: 1px;
-	border-radius: 0;
+	border-radius: 10px;
 	font-size: 18px;
 	padding: 16px 48px;
 }
