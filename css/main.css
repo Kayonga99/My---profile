@@ -205,7 +205,7 @@ body {
 	word-spacing: 5px;
 	letter-spacing: 1px;
 	box-shadow: 0 3px 1px 0 rgba(20, 20, 26, 0.55);
-	border-radius: 0;
+	border-radius: 1opx;
 	font-size: 18px;
 	background-color: rgba(247, 255, 248, 1);
 	padding: 16px 48px;
