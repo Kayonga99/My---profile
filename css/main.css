@@ -512,6 +512,7 @@ textarea {
 	border: 1px solid #fff;
 	padding: 12px 15px;
 	margin-bottom: 30px;
+	border-radius: 10px;
 }
 
 input[type="submit"] {
@@ -521,6 +522,7 @@ input[type="submit"] {
 	padding: 10px;
 	transition: 0.5s background linear;
 	font-weight: bold;
+	border-radius: 10px;
 }
 
 input[type="submit"]:hover {
