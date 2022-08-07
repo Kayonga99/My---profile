@@ -139,7 +139,7 @@ body {
 
 .overlay-3 {
 	padding: 60px 0;
-	background-color: rgba(9, 20, 39, 0.83);
+	background-color: rgba(9, 20, 39, 0.97);
 }
 
 .overlay {
@@ -459,7 +459,7 @@ ul.numbersList span{
 /////////////////////////////////////////////////////////////////////*/
 
 #contact {
-	background: url(../img/bg/contact-bg.jpg) no-repeat center center fixed;
+	background: url(../img/bg/fxvT.gif) no-repeat center center fixed;
 	background-size: cover;
 	color: #fff;
 }
