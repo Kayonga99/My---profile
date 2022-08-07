@@ -5,10 +5,6 @@
 	src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/pacifico.woff") format('woff');
 }
 
-.display-none {
-	display: none;
-}
-
 html, body {
 	margin: 0; 
 	padding: 0;
