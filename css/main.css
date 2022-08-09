@@ -5,6 +5,16 @@
 	src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/pacifico.woff") format('woff');
 }
 
+.tech-logo {
+	width: 80px;
+	height: 100px;
+}
+
+.css {
+	width: 90px;
+	height: 100px;
+}
+
 html, body {
 	margin: 0; 
 	padding: 0;
@@ -409,9 +419,11 @@ ul.numbersList span{
 	margin-bottom: 0px;
 }
 
-.testimonial p {
-    line-height: 34px;
-    margin-top: 20px;
+.testimonial  {
+	display: flex;
+    /* line-height: 34px;
+    margin-top: 20px; */
+	flex-direction: column;
 }
 
 #testimonials .block-heading h1
