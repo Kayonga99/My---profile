@@ -215,3 +215,4 @@ $(document).scroll((event) => {
 });
 
 const popUp = document.querySelectorAll(".fa-eye")
+
