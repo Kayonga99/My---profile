@@ -5,8 +5,14 @@
 	src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/pacifico.woff") format('woff');
 }
 
-.display-none {
-	display: none;
+.tech-logo {
+	width: 80px;
+	height: 100px;
+}
+
+.css {
+	width: 90px;
+	height: 100px;
 }
 
 html, body {
@@ -413,11 +419,6 @@ ul.numbersList span{
 	margin-bottom: 0px;
 }
 
-.testimonial p {
-    line-height: 34px;
-    margin-top: 20px;
-}
-
 #testimonials .block-heading h1
 {
 	color: rgb(0, 129, 129);
@@ -429,6 +430,13 @@ ul.numbersList span{
 #testimonials .testimonial {
 	padding: 25px;
 	cursor: -webkit-grab;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	
+
 }
 
 #testimonials .testimonial > img {
@@ -442,6 +450,11 @@ ul.numbersList span{
 
 .owl-carousel {
 	z-index: 0;
+}
+
+.owl-item {
+	display: flex;
+	justify-content: center;
 }
 
 .owl-carousel .owl-item img {
