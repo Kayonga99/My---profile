@@ -419,13 +419,6 @@ ul.numbersList span{
 	margin-bottom: 0px;
 }
 
-.testimonial  {
-	display: flex;
-    /* line-height: 34px;
-    margin-top: 20px; */
-	flex-direction: column;
-}
-
 #testimonials .block-heading h1
 {
 	color: rgb(0, 129, 129);
@@ -437,6 +430,13 @@ ul.numbersList span{
 #testimonials .testimonial {
 	padding: 25px;
 	cursor: -webkit-grab;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	
+
 }
 
 #testimonials .testimonial > img {
@@ -450,6 +450,11 @@ ul.numbersList span{
 
 .owl-carousel {
 	z-index: 0;
+}
+
+.owl-item {
+	display: flex;
+	justify-content: center;
 }
 
 .owl-carousel .owl-item img {
