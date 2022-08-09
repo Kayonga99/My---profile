@@ -216,3 +216,48 @@ $(document).scroll((event) => {
 
 const popUp = document.querySelectorAll(".fa-eye")
 
+
+// local-storage
+const inputFields = document.forms['contact-form']
+const mail = inputFields.email;
+const messageInput = inputFields.message;
+const nameInput = inputFields.name;
+const formElts = inputFields.querySelectorAll('input, textarea');
+
+
+const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
+const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
+
+const formData = getFromLocalStorage('formData');
+if (formData !== null) {
+  nameInput.value = formData.name;
+  mail.value = formData.email;
+  messageInput.value = formData.message;
+  
+}
+formElts.forEach((fe) => {
+  fe.addEventListener('input', () => {
+    const objectForLocalStorage = {
+      name: nameInput.value,
+      email: mail.value,
+      message: messageInput.value,
+    };
+    saveToLocalStorage('formData', objectForLocalStorage);
+  });
+});
+
+//form validation
+function validateEmail(email, event, errorMsg) {
+  if (email !== email.toLowerCase()) {
+    event.preventDefault();
+    const msg = document.getElementById('email');
+    msg.innerText = errorMsg;
+    msg.style.color = 'red';
+    msg.style.fontSize = '15px';
+  }
+}
+const form = document.getElementById('form');
+form.addEventListener('submit', (event) => {
+  const errorMessage = 'Please enter an email address without any upper-case letters.';
+  validateEmail(form.elements.email.value, event, errorMessage);
+});
