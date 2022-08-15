@@ -338,11 +338,34 @@ $(document).scroll((event) => {
 
 
 
-local-storage
+// form validation
+
+function validateEmail(email, event, errorMsg) {
+  if (email !== email.toLowerCase()) {
+    event.preventDefault();
+    const msg = document.getElementById('form-div');
+    msg.style.display = 'block';
+    msg.innerText = errorMsg;
+    msg.style.fontSize = '15px';
+  }
+}
+const form = document.getElementById('form');
+const email = document.getElementById('email')
+
+email.addEventListener('click',() => {
+  const msg = document.getElementById('form-div');
+  msg.style.display = 'none';
+})
+form.addEventListener('submit', (event) => {
+  const errorMessage = 'Please enter an email address without any upper-case letters.';
+  validateEmail(form.elements.email.value, event, errorMessage);
+});
+
+// local-storage
 const inputFields = document.forms['contact-form']
 const mail = inputFields.email;
-const messageInput = inputFields.message;
-const nameInput = inputFields.name;
+const messageInput = inputFields.comment;
+const nameInput = inputFields.fullName;
 const formElts = inputFields.querySelectorAll('input, textarea');
 
 
@@ -365,21 +388,4 @@ formElts.forEach((fe) => {
     };
     saveToLocalStorage('formData', objectForLocalStorage);
   });
-});
-
-//form validation
-function validateEmail(email, event, errorMsg) {
-  if (email !== email.toLowerCase()) {
-    event.preventDefault();
-    const msg = document.getElementById('email');
-    msg.innerText = errorMsg;
-    msg.style.color = 'red';
-    msg.style.fontSize = '15px';
-  }
-}
-
-const form = document.getElementById('form');
-form.addEventListener('submit', (event) => {
-  const errorMessage = 'Please enter an email address without any upper-case letters.';
-  validateEmail(form.elements.email.value, event, errorMessage);
 });
