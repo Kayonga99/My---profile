@@ -679,6 +679,16 @@ i.fa.fa-envelope-o {
 	line-height: 43px;
 	margin-top: -22px;
 }
+
+#form-div {
+	display: none;
+	color: red;
+	padding: 10px;
+	margin-left: 21px;
+	border-radius: 8px;
+	background: #fff;
+  }
+
 /* ///////////////////////////////////////////////////////////////////// 
 //  11 - Responsive styles
 /////////////////////////////////////////////////////////////////////*/
