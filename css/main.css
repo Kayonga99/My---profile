@@ -633,6 +633,7 @@ input[type="submit"]:hover {
   color: #fff;
 }
 
+
 /* /////////////////////////////////////////////////////////////////////
 //  ERROR MSSG DIV
 ///////////////////////////////////////////////////////////////////// */
@@ -714,6 +715,10 @@ i.fa.fa-envelope-o {
   .element-item {
     width: 33.33%;
   }
+  .owl-dots {
+	display: flex;
+	justify-content: center;
+}
 }
 
 @media (max-width: 767px) {
