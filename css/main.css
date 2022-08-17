@@ -707,6 +707,11 @@ i.fa.fa-envelope-o {
   margin-top: -22px;
 }
 
+.owl-dots {
+	display: flex;
+	justify-content: center;
+}
+
 /* /////////////////////////////////////////////////////////////////////
 //  11 - Responsive styles
 ///////////////////////////////////////////////////////////////////// */
@@ -715,10 +720,6 @@ i.fa.fa-envelope-o {
   .element-item {
     width: 33.33%;
   }
-  .owl-dots {
-	display: flex;
-	justify-content: center;
-}
 }
 
 @media (max-width: 767px) {
