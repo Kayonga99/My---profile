@@ -624,10 +624,11 @@ input[type="submit"]:hover {
 
 #form-div {
 	display: none;
-	color: red;
+	color: #b30000;
 	padding: 10px;
 	margin-left: 21px;
 	border-radius: 8px;
+	margin-bottom: 12px;
 	background: #fff;
   }
 
