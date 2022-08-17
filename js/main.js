@@ -361,6 +361,10 @@ form.addEventListener('submit', (event) => {
   validateEmail(form.elements.email.value, event, errorMessage);
 });
 
+
+
+
+
 // local-storage
 const inputFields = document.forms['contact-form']
 const mail = inputFields.email;
