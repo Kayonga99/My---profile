@@ -357,7 +357,7 @@ email.addEventListener('click',() => {
   msg.style.display = 'none';
 })
 form.addEventListener('submit', (event) => {
-  const errorMessage = 'Please enter an email address without any upper-case letters.';
+  const errorMessage = 'Please enter an email address without capital letters.';
   validateEmail(form.elements.email.value, event, errorMessage);
 });
 
