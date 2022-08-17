@@ -622,6 +622,15 @@ input[type="submit"]:hover {
 	color: #fff;
 }
 
+#form-div {
+	display: none;
+	color: red;
+	padding: 10px;
+	margin-left: 21px;
+	border-radius: 8px;
+	background: #fff;
+  }
+
 /* ///////////////////////////////////////////////////////////////////// 
 //  10 - Footer
 /////////////////////////////////////////////////////////////////////*/
