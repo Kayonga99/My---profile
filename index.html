@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-    	<title>Developer</title>
+    	<title>KC'S Portfolio</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -184,7 +184,7 @@
                 <span>View All</span>
             </span>
             <!-- modal  -->
-            <div class="pop-up-modal">
+            <div id="pop-up-modal">
 
             </div> <!-- end of modal -->
 
@@ -315,10 +315,11 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 wow animated fadeInLeft">
-                                <form  id='form' class="contact-form" action="https://formspree.io/f/xpzbqzab" method="post">
-                                    <input id="name" type="text" name="name" placeholder="Name" maxlength="30" required>
-                                    <input id="email" type="email" name="email" placeholder="Email" required>
-                                    <textarea cols="30" rows="5" name="comment" id="message" placeholder="Say Something..." required></textarea>
+                                <form  id='form' class="contact-form" action="https://formspree.io/f/xpzbqzab" method="post" name="contact-form">
+                                    <input class="input i-data"  id="name" type="text" name="fullName" placeholder="Name" maxlength="30" required>
+                                    <input class="input i-data" type="email" name="email" id="email" placeholder="Email" required>
+                                    <textarea class="msg i-data" cols="30" rows="5" name="comment" id="message" placeholder="Say Something..." required></textarea>
+                                    <div class="form-mssg" id="form-div"></div>
                                     <input type="submit" value="Submit">
                                 </form>
                             </div>
