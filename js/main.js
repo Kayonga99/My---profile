@@ -340,7 +340,7 @@ $(document).scroll((event) => {
 
 
 
-const openEls = document.querySelectorAll("[data-open]");
+const openEls = document.querySelectorAll(".fa-eye");
 const closeEls = document.querySelectorAll("[data-close]");
 const isVisible = "is-visible";
 
