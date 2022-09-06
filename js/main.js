@@ -341,6 +341,7 @@ $(document).scroll((event) => {
 
 
 const openEls = document.querySelectorAll(".fa-eye");
+console.log('openEls');
 const closeEls = document.querySelectorAll("[data-close]");
 const isVisible = "is-visible";
 
