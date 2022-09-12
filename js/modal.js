@@ -1,137 +1,174 @@
-// const modalData = [
-//    {   id: 1,
-//     heading1: 'NAC',
-//     heading2: ['CANOPY', 'Back End Dev', '2022'],
-//     description: 'New apostolic church pentocst devine service 2022 Capstone project.',
-//     featuredImage: './photos/newp/first-bg.jpg',
-//     languages: ['html', 'css', 'javascript'],
-//     linkLive: 'https://kayonga99.github.io/Capstone',
-//     linkSource: 'https://github.com/Kayonga99/Capstone',
-//   },
-//   {   id: 1,
-//     heading1: 'NAC',
-//     heading2: ['CANOPY', 'Back End Dev', '2022'],
-//     description: 'New apostolic church pentocst devine service 2022 Capstone project.',
-//     featuredImage: './photos/newp/first-bg.jpg',
-//     languages: ['html', 'css', 'javascript'],
-//     linkLive: 'https://kayonga99.github.io/Capstone',
-//     linkSource: 'https://github.com/Kayonga99/Capstone',
-//   },
-//   {   id: 1,
-//     heading1: 'NAC',
-//     heading2: ['CANOPY', 'Back End Dev', '2022'],
-//     description: 'New apostolic church pentocst devine service 2022 Capstone project.',
-//     featuredImage: './photos/newp/first-bg.jpg',
-//     languages: ['html', 'css', 'javascript'],
-//     linkLive: 'https://kayonga99.github.io/Capstone',
-//     linkSource: 'https://github.com/Kayonga99/Capstone',
-//   },
-//   {   id: 1,
-//     heading1: 'NAC',
-//     heading2: ['CANOPY', 'Back End Dev', '2022'],
-//     description: 'New apostolic church pentocst devine service 2022 Capstone project.',
-//     featuredImage: './photos/newp/first-bg.jpg',
-//     languages: ['html', 'css', 'javascript'],
-//     linkLive: 'https://kayonga99.github.io/Capstone',
-//     linkSource: 'https://github.com/Kayonga99/Capstone',
-//   },
-//   {   id: 1,
-//     heading1: 'NAC',
-//     heading2: ['CANOPY', 'Back End Dev', '2022'],
-//     description: 'New apostolic church pentocst devine service 2022 Capstone project.',
-//     featuredImage: './photos/newp/first-bg.jpg',
-//     languages: ['html', 'css', 'javascript'],
-//     linkLive: 'https://kayonga99.github.io/Capstone',
-//     linkSource: 'https://github.com/Kayonga99/Capstone',
-//   },
-//   {   id: 1,
-//     heading1: 'NAC',
-//     heading2: ['CANOPY', 'Back End Dev', '2022'],
-//     description: 'New apostolic church pentocst devine service 2022 Capstone project.',
-//     featuredImage: './photos/newp/first-bg.jpg',
-//     languages: ['html', 'css', 'javascript'],
-//     linkLive: 'https://kayonga99.github.io/Capstone',
-//     linkSource: 'https://github.com/Kayonga99/Capstone',
-//   },
-//   {   id: 1,
-//     heading1: 'NAC',
-//     heading2: ['CANOPY', 'Back End Dev', '2022'],
-//     description: 'New apostolic church pentocst devine service 2022 Capstone project.',
-//     featuredImage: './photos/newp/first-bg.jpg',
-//     languages: ['html', 'css', 'javascript'],
-//     linkLive: 'https://kayonga99.github.io/Capstone',
-//     linkSource: 'https://github.com/Kayonga99/Capstone',
-//   },
-//   {   id: 1,
-//     heading1: 'NAC',
-//     heading2: ['CANOPY', 'Back End Dev', '2022'],
-//     description: 'New apostolic church pentocst devine service 2022 Capstone project.',
-//     featuredImage: './photos/newp/first-bg.jpg',
-//     languages: ['html', 'css', 'javascript'],
-//     linkLive: 'https://kayonga99.github.io/Capstone',
-//     linkSource: 'https://github.com/Kayonga99/Capstone',
-//   },
-// ];
-
-// function popData(card) {
-//   const temp = document.createElement('template');
-//   temp.innerHTML += `<section class="card-list-23">
-//   <div class="desk-top">
-//     <div class="">
-//       <div class="x-class">
-//         <h3 class="tonic-class-23">${card.heading1}</h3>
-//         <h4 class="close-x">&times;</h4>
-//       </div>
-//         <div class="canopy">
-//           <ul class="cards-ul">
-//           ${card.heading2.map((heading, index) => `<li class="info${index}">${heading}</li>`).join('')}
-//           </ul>
-//         </div>
-//         <img class="card" src="${card.featuredImage}" alt="work1Snapshot" />
-//         <img class="nature-animated" src="${card.featuredImage2}" alt="nature animated picture" />
-//         <div class="src-div">
-//       <p class="src-description">
-//         ${card.description2}
-//       </p>
-//       <div class="div-src">
-//       <ul class="tools-src src-tools">
-//         <li class="tools-li-src"> html</li>
-//         <li class="tools-li-src">css</li>
-//         <li class="tools-li">javaScript</li>
-//         <li class="extra">github</li>
-//         <li class="extra">ruby</li>
-//         <li class="extra">Bootstraps  </li>
-//       </ul>
-//       <div class="view-project">
-//         <a class="src-btn" href="${card.linkLive} ">See live <img src="./photos/icons/btn-icon.png" alt="button-icon"> </a>
-//         <a class="src-btn" href="${card.linkSource}">See Source <img src="./photos/icons/blue-github.png" alt="github-icon"> </a>
-//       </div>
-//     </div>
-//     </div>
-// </section>
-// `;
-//   const box = document.getElementById('pop-up-modal');
-//   box.appendChild(temp.content);
-// }
-
-// const popUp = document.querySelectorAll(".fa-eye")
-
-// popUp.addEventListener("click", () => { 
-  
-// })
-
-
-
-
-const openModal = document.querySelectorAll(".fa-eye")
-const closeModal = document.querySelector(".close-x")
+const cards = document.getElementById('cards')
 const ourModal = document.querySelector(".openModal")
 
-openModal.forEach((e) => {
-  e.addEventListener("click", () =>{
-    ourModal.style.display = "block";
+
+const openData = document.querySelector('.openModal');
+// console.log(openData);
+
+const modalData = [
+   {   id: 0,
+    heading1: 'NAC',
+    heading2: '',
+    description: `This is a website of the New apostolic church Conference That has
+     diffrent sections about the church Conference built using html, javascript and css.`,
+    featuredImage: 'img/pent.gif',
+    languages: ['html', 'css', 'javascript'],
+    linkLive: 'https://kayonga99.github.io/NAC-Pentecost/',
+    linkSource: 'https://github.com/Kayonga99/NAC-Pentecost',
+  },
+  {   id: 1,
+    heading1: 'FOOD RECIPE',
+    description: `This is a simple javascript website that allows users to like and comment on any
+     kind of the food that they like. Built during the JavaScript group final Capstone`,
+    featuredImage: 'img/food-logo.png',
+    languages: ['html','Webpack', 'css', 'javascript'],
+    linkLive: 'https://zippy-mochi-673645.netlify.app/',
+    linkSource: 'https://github.com/Kayonga99/Javascript-Capstone',
+  },
+  {   id: 2,
+    heading1: 'BOOK STORE',
+      description: `A single page bookstore app that allows the user to add and remove books with Author,
+       Category and Title. Build with React and Redux.`,
+    featuredImage: 'img/bookstore-placehoher.png',
+    languages: ['React', 'Redux'],
+    linkLive: 'https://helpful-macaron-fb3edd.netlify.app/',
+    linkSource: 'https://github.com/Kayonga99/Bookstore',
+  },
+  {   id: 3,
+    heading1: 'LEADERBOARD',
+    description: `The leaderboard website displays scores submitted by different players.
+     It also allows you to submit your score.
+      All data is preserved thanks to the external Leaderboard API service..`,
+    featuredImage: 'img/soon3.png',
+    languages: ['html', 'css', 'javascript'],
+    linkLive: 'https://shiny-travesseiro-4d513a.netlify.app/',
+    linkSource: 'https://github.com/Kayonga99/Leaderboard',
+  },
+  {   id: 4,
+    heading1: 'SPACE TRAVELLERS',
+    description: `Space Travellers is a single page application that allows a user
+     to book and cancel a Rocket and also see some space missions,
+      The app was developed during during Microverse group Capstone .`,
+    featuredImage: 'img/rocket.webp',
+    languages: ['React', 'Redux'],
+    linkLive: 'https://space-travelers-mehdirh-kayonga99.netlify.app/',
+    linkSource: 'https://github.com/Kayonga99/Space--Travellers',
+  },
+  {   id: 5,
+    heading1: 'COVID-19 TRACKING',
+    description: `COVID-19-data-tracking is a project built using React and redux
+     in this project information on the COVID-19 virus is being fetched from an API.
+     This Application shows data on COVID-19 in European countries, 
+    the information is on COVID-19 cases, deaths, people tested etc.`,
+    featuredImage: 'img/covid1.jfif',
+    languages: ['html', 'css', 'javascript'],
+    linkLive: 'https://relaxed-kheer-37635b.netlify.app/',
+    linkSource: 'https://github.com/Kayonga99/COVID-19-data-tracking',
+  },
+  {   id: 6,
+    heading1: 'COMING SOON',
+    description: `Hi I'm still working on this project at the moment, it  will appear here as soon as its done.`,
+    featuredImage: 'img/soon2.webp',
+    languages: ['soon', 'soon', 'soon'],
+    linkLive: '',
+    linkSource: '',
+  },
+  {   id: 7,
+    heading1: 'COMING SOON',
+    description: `Hi I'm still working on this project at the moment, it  will appear here as soon as its done.`,
+    featuredImage: 'img/soon.jpg',
+    languages: ['soon', 'soon', 'soon'],
+    linkLive: '',
+    linkSource: '',
+  },
+];
+
+// Modal data
+
+// console.log(openModal);
+
+
+modalData.forEach((card) => {
+  let temp = document.createElement("template")
+  temp.innerHTML = `
+  <div class="element-item grid" >
+  <div class="effect-zoe">
+      <img class="img-responsive" alt="Portfolio" src="${card.featuredImage}">
+      <figcaption>
+          <h2 class="hidden-xs"><span>${card.heading1}</span></h2>
+          <p class="icon-links">
+              <i class="fa fa-eye open-modal" id=${card.id}></i>
+              <a href="${card.linkLive}"><i class="fa fa-dribbble"></i></a>
+              <!-- <a href="#"><i class="fa fa-pinterest"></i></a> -->
+          </p>
+      </figcaption>
+  </div>
+</div>`
+cards.appendChild(temp.content)
+const openModal = document.querySelectorAll(".fa-eye")
+
+
+openModal.forEach((card) => {
+  card.addEventListener("click", (e) =>{
+    // console.log(e.target.id);
+    showPop(e.target.id)
+    // ourModal.style.display = "block";
   })
 })
-closeModal.addEventListener("click", () =>{
-  openModal.style.display = "none";
+
+
 })
+
+const cardsUl = document.getElementById('cards');
+
+
+function mapModal(){
+  
+}
+const projectModal =(card, index) =>{
+
+let projectModal =
+ `
+<div class="modal-container" >
+  <span class="close-x">&times;</span>
+  <ul class="project-name">
+            <li class="project-tile">${card.heading1}</li>
+        </ul>
+  <img class="modal-image" src="${card.featuredImage}" alt="">
+  <div class="row-flow">
+  <p class="pro-drescription">${card.description}</p>
+        <div class="t-n-btn">
+        <ul class="tech-list1">
+         ${card.languages.map((lang) =>` <li class="t-list ${index}">${lang}</li>` ).join('')} 
+        </ul>
+        <div class="btn-cont">
+        <a href="${card.linkLive} "> <button type="button" class="p-btn2">See Live <img src="./img//icons/btn-icon.png" alt="btton icon"> </button></a>
+        <a href="${card.linkSource} "> <button type="button" class="p-btn22">See source <img src="./img/icons/blue-github.png" alt="github icon"> </button></a>
+          </div>
+          </div>
+  </div>
+</div>`
+
+openData.innerHTML = projectModal;
+const closeModal = document.querySelector(".close-x")
+closeModal.addEventListener("click", () =>{ ourModal.style.display = "none";
+});
+}
+
+
+
+function showPop(id) {
+
+  console.log(id);
+  modalData.find((card) => {
+    if (Number(id) === Number(card.id)) {
+console.log(card);
+      projectModal (card);
+      ourModal.style.display = 'block';
+      // console.log(ourModal);
+    }
+  });
+
+}
+
+// console.log(closeModal); 

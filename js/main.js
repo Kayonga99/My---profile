@@ -226,28 +226,23 @@ function validateEmail(email, event, errorMsg) {
   }
 }
 const form = document.getElementById('form');
-const email = document.getElementById('email')
+const email = document.getElementById('email');
 
-email.addEventListener('click',() => {
+email.addEventListener('click', () => {
   const msg = document.getElementById('form-div');
   msg.style.display = 'none';
-})
+});
 form.addEventListener('submit', (event) => {
   const errorMessage = 'Please enter an email address without capital letters.';
   validateEmail(form.elements.email.value, event, errorMessage);
 });
 
-
-
-
-
 // local-storage
-const inputFields = document.forms['contact-form']
+const inputFields = document.forms['contact-form'];
 const mail = inputFields.email;
 const messageInput = inputFields.comment;
 const nameInput = inputFields.fullName;
 const formElts = inputFields.querySelectorAll('input, textarea');
-
 
 const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
 const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
@@ -257,7 +252,6 @@ if (formData !== null) {
   nameInput.value = formData.name;
   mail.value = formData.email;
   messageInput.value = formData.message;
-  
 }
 formElts.forEach((fe) => {
   fe.addEventListener('input', () => {
@@ -268,9 +262,6 @@ formElts.forEach((fe) => {
     };
     saveToLocalStorage('formData', objectForLocalStorage);
   });
-}); 
-
+});
 
 // Modal   lets play with the modal here and
-
-
