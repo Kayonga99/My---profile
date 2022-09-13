@@ -720,7 +720,7 @@ i.fa.fa-envelope-o {
   position: fixed;
   height: 92%;
   width: 24em;
-  background-color: #fff;
+  background-color:  rgb(224, 247, 246);
   display: none;
   border-radius: 20px;
   color: grey;
@@ -780,11 +780,12 @@ i {
 }
 
 .t-list {
-  background-color: #ebebff;
+  background-color: #fff;
   padding: 5px 10px;
   width: 90px;
   border-radius: 8px;
   padding-left: 11px;
+  text-align: center;
 }
 
 .t-list2 {
@@ -860,8 +861,16 @@ i {
     overflow-y: auto;
   }
 
+  .project-tile {
+  margin: 30px 0;
+  }
+
   .modal-image {
     width: 681px;
+  }
+
+  .tech-list1 {
+    margin-left: 0;
   }
 
   .row-flow {
