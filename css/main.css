@@ -44,7 +44,7 @@ h6 {
 
 body {
   font: 15px/23px "Lucida Sans", "Liberation Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-  background-color: rgb(224, 247, 246);
+  background-color: rgb(229,229,229, 0.9);
 }
 
 .btn {
@@ -707,8 +707,8 @@ i.fa.fa-envelope-o {
 }
 
 .owl-dots {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -761,13 +761,13 @@ i {
 }
 
 .project-tile {
-    height: 3px;
-    padding-left: -5px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    color: #172b4d;
-    margin: 12px 0;
+  height: 3px;
+  padding-left: -5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+  margin: 12px 0;
 }
 
 .tech-list1 {
@@ -797,14 +797,14 @@ i {
 
 .p-btn2 {
   color: #396df2;
-    padding: 11px;
-    border-radius: 10px;
-    background-color: #fff;
-    border: solid 1px #396df2;
-    padding-left: 24px;
-    width: 133px;
-    margin-right: 4px;
-    margin-left: 28px;
+  padding: 11px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: solid 1px #396df2;
+  padding-left: 24px;
+  width: 133px;
+  margin-right: 4px;
+  margin-left: 28px;
 }
 
 .p-btn22 {
@@ -855,9 +855,9 @@ i {
 @media screen and (min-width: 768px) {
   .openModal {
     width: 50em;
-  margin-bottom: 12px;
-  height: 84%;
-  overflow-y: auto;
+    margin-bottom: 12px;
+    height: 84%;
+    overflow-y: auto;
   }
 
   .modal-image {
@@ -889,8 +889,8 @@ i {
     display: flex;
     flex-direction: column;
   } */
-
 }
+
 @media (max-width: 767px) {
   .element-item {
     width: 50%;

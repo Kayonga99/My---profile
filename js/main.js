@@ -1,4 +1,4 @@
-//
+/*eslint-disable */
 
 (function ($, sr) {
   // debouncing function from John Hann
