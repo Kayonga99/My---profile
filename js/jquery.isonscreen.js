@@ -1,3 +1,4 @@
+/*eslint-disable */
 (function ($) {
   $.fn.isOnScreen = function (x, y) {
     if (x == null || typeof x === 'undefined') x = 1;
