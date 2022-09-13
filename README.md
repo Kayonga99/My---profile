@@ -12,6 +12,8 @@
 - HTML
 - Nodejs
 - CSS
+- JQuerry
+- Bootstrap
 
 
 
